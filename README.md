@@ -14,7 +14,7 @@
 #### The database will have a collection for "types" of cards, and a separate collection for all cards within that type. They will be linked one-to-many.
 #### Collection of type will contain the following: name, image, description of type
 #### Each card will contain the following: name, cost, power, effect/details, image
-#### Layout wise, the app will have a landing page, a header bar with a some navigation buttons ("Home", "Types", “Cards”, ect.), and a search bar to search the cards and type collection
+#### Layout wise, the app will have a landing page, a header bar with a some navigation buttons ("Home", "Types", “Cards”, etc.), and a search bar to search the cards and type collection
 #### The "Types" Component will display all of the types and use React Router to allow the user to click each type cover image and retrieve information about that type. It will also list all the cards in the given type.
 #### The Personal Deck Component will have the ability to search cards and add them to a person's deck. I will also have the ability to add a random card to your deck.
 ***
