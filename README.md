@@ -10,7 +10,7 @@
 
 ### ***Description*** 
 
-#### A database for the popular comic book based card game, SNAP! This database will have all cards currently available in the game and all their "specs". This database will be searchable with the ability to create a personal deck comprised of and up to 12 cards.
+#### A database and deck builder for the popular comic book based card game, SNAP! This database will have all cards currently available in the game and all their "specs". This database will be searchable with the ability to create a personal deck comprised of and up to 12 cards.
 #### The database will have a collection for "types" of cards, and a separate collection for all cards within that type. They will be linked one-to-many.
 #### Collection of type will contain the following: name, image, description of type
 #### Each card will contain the following: name, cost, power, effect/details, image
