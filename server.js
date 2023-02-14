@@ -10,8 +10,8 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (request, response) => {
-  response.send({ msg: 'Server Running' })
+app.get('/', (req, res) => {
+  res.send({ msg: 'Server Running' })
 })
 
 app.listen(PORT, () => {
