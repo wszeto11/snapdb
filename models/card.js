@@ -6,7 +6,8 @@ const Card = new Schema(
     name: { type: String, required: true },
     cost: { type: String, required: true },
     power: { type: String, required: true },
-    ability: { type: String, required: true },
+    type: { type: String, required: true },
+    type_id: { type: Schema.Types.ObjectID, ref: 'type' },
     image: { type: String, required: true }
   },
   { timestamps: true }
