@@ -1,7 +1,6 @@
 const Card = require('../models/card')
 const Type = require('../models/type')
 const Deck = require('../models/deck')
-const type = require('../models/type')
 
 const getAllTypes = async (req, res) => {}
 try {

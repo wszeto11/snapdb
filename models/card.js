@@ -8,7 +8,8 @@ const Card = new Schema(
     power: { type: String, required: true },
     type: { type: String, required: true },
     type_id: { type: Schema.Types.ObjectID, ref: 'type' },
-    image: { type: String, required: true }
+    image: { type: String, required: true },
+    description: { type: String, required: true }
   },
   { timestamps: true }
 )
