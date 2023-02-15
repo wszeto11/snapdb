@@ -1311,7 +1311,16 @@ const main = async () => {
         'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/klaw.webp?v=39',
       description: 'The location to the right has +6 Power.'
     },
-
+    {
+      name: 'Knull',
+      cost: '6',
+      power: '0',
+      type: 'Ongoing',
+      type_id: ongoing[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/knull.webp?v=39',
+      description: 'Has the combined Power of all cards destroyed this game.'
+    },
     {
       name: 'Lizard',
       cost: '2',
@@ -1787,13 +1796,78 @@ const main = async () => {
     /* Destroy * ***************************************************************
      ****************************************************************************    */
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Angel',
+      cost: '1',
+      power: '2',
       type: 'Destroy',
       type_id: destroy[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/angel.webp?v=39',
+      description:
+        'When one of your cards is destroyed, this flies out of your deck to replace it.'
+    },
+    {
+      name: 'Attuma',
+      cost: '4',
+      power: '10',
+      type: 'Destroy',
+      type_id: destroy[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/attuma.webp?v=39',
+      description:
+        'If you have another card here at the end of your turn, destroy this.'
+    },
+    {
+      name: 'Bucky Barnes',
+      cost: '2',
+      power: '1',
+      type: 'Destroy',
+      type_id: destroy[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/bucky-barnes.webp?v=39',
+      description:
+        'When this is destroyed, create the Winter Soldier in its place.'
+    },
+    {
+      name: 'Deadpool',
+      cost: '1',
+      power: '1',
+      type: 'Destroy',
+      type_id: destroy[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/deadpool.webp?v=39',
+      description:
+        'When this is destroyed, return it to your hand with double the Power.'
+    },
+    {
+      name: 'Death',
+      cost: '9',
+      power: '12',
+      type: 'Destroy',
+      type_id: destroy[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/death.webp?v=39',
+      description: 'Costs 1 less for each card destroyed this game.'
+    },
+    {
+      name: 'Nova',
+      cost: '1',
+      power: '1',
+      type: 'Destroy',
+      type_id: destroy[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/nova.webp?v=39',
+      description: 'When this is destroyed, give your cards +1 Power.'
+    },
+    {
+      name: 'Sabretooth',
+      cost: '3',
+      power: '4',
+      type: 'Destroy',
+      type_id: destroy[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/sabretooth.webp?v=39',
+      description: 'When this is destroyed, return it to your hand. It costs 0.'
     }
   ]
 
