@@ -19,8 +19,36 @@ const main = async () => {
       cost: [5],
       power: [9],
       type: 'No Ability',
+      type_id: noAbility[0]._id,
       image:
         'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/abomination.webp?v=39'
+    },
+    {
+      name: 'Cyclops',
+      cost: [3],
+      power: [4],
+      type: 'No Ability',
+      type_id: noAbility[0]._id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/cyclops.webp?v=39'
+    },
+    {
+      name: 'Hulk',
+      cost: [6],
+      power: [12],
+      type: 'No Ability',
+      type_id: noAbility[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/hulk.webp?v=39'
+    },
+    {
+      name: 'Misty Knight',
+      cost: [1],
+      power: [2],
+      type: 'No Ability',
+      type_id: noAbility[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/misty-knight.webp?v=39'
     }
   ]
 
