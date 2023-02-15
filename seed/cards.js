@@ -1703,76 +1703,85 @@ const main = async () => {
         'At the end of the game, move to a location that wins you the game. (If possible)'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Dagger',
+      cost: '2',
+      power: '1',
       type: 'Move',
       type_id: move[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/dagger.webp?v=39',
+      description:
+        'When this moves to a location, +2 Power for each card your opponent has there.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Human Torch',
+      cost: '1',
+      power: '2',
       type: 'Move',
       type_id: move[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/human-torch.webp?v=39',
+      description: 'When this moves, double its Power.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Kingpin',
+      cost: '3',
+      power: '4',
       type: 'Move',
       type_id: move[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/kingpin.webp?v=39',
+      description: 'When a card moves here on turn 6, destroy it.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Kraven',
+      cost: '2',
+      power: '2',
       type: 'Move',
       type_id: move[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/kraven.webp?v=39',
+      description: 'When a card moves here, this gets +2 Power.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Miles Morales',
+      cost: '4',
+      power: '5',
       type: 'Move',
       type_id: move[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/miles-morales.webp?v=39',
+      description: 'If a card moved last turn, this costs 1.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Multiple Man',
+      cost: '2',
+      power: '3',
       type: 'Move',
       type_id: move[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/multiple-man.webp?v=39',
+      description: 'When this moves, add a copy to the old location.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Nightcrawler',
+      cost: '1',
+      power: '2',
       type: 'Move',
       type_id: move[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/nightcrawler.webp?v=39',
+      description: 'You can move this once.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Vision',
+      cost: '5',
+      power: '7',
       type: 'Move',
       type_id: move[0].id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/vision.webp?v=39',
+      description: 'You can move this each turn.'
     },
 
     /* Destroy * ***************************************************************
