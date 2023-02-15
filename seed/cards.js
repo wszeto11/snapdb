@@ -13,7 +13,8 @@ const main = async () => {
   const destroy = await Type.find({ name: 'Destroy' })
 
   const cards = [
-    // On Reveal                          //
+    /* On Reveal * *************************************************************
+     ****************************************************************************    */
     {
       name: 'Absorbing Man',
       cost: '4',
@@ -1165,7 +1166,8 @@ const main = async () => {
       description: 'Remove the abilities on the next card you play.'
     },
 
-    // Ongoing                          //
+    /* Ongoing * ***************************************************************
+     ****************************************************************************    */
     {
       name: 'Cosmo',
       cost: '3',
@@ -1433,162 +1435,120 @@ const main = async () => {
       description: '+1 Power for each opposing card at this location.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Quinjet',
+      cost: '1',
+      power: '2',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/quinjet.webp?v=39',
+      description: 'Cards that didnt start in your deck cost 1 less.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Red Skull',
+      cost: '5',
+      power: '15',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/red-skull.webp?v=39',
+      description: 'Enemy cards at this location have +2 Power.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Ronan the Accuser',
+      cost: '5',
+      power: '3',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/ronan-the-accuser.webp?v=39',
+      description: "+2 Power for each card in your opponent's hand."
     },
 
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Sandman',
+      cost: '4',
+      power: '1',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/sandman.webp?v=39',
+      description: 'Players can only play 1 card a turn.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Sera',
+      cost: '5',
+      power: '4',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/sera.webp?v=39',
+      description: 'Cards in your hand cost 1 less. (minimum 1)'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Strong Guy',
+      cost: '4',
+      power: '4',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/strong-guy.webp?v=39',
+      description: 'If your hand is empty, +6 Power.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Super Skrull',
+      cost: '4',
+      power: '2',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/super-skrull.webp?v=39',
+      description: 'Has the Ongoing effects of all enemy cards.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Typhoid Mary',
+      cost: '4',
+      power: '10',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/typhoid-mary.webp?v=39',
+      description: 'Your other cards have -1 Power.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Warpath',
+      cost: '4',
+      power: '5',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/warpath.webp?v=39',
+      description: 'If any of your locations are empty, +4 Power.'
     },
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Wong',
+      cost: '4',
+      power: '2',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/wong.webp?v=39',
+      description: 'Your On Reveal abilities at this location happen twice.'
     },
 
     {
-      name: '',
-      cost: '',
-      power: '',
+      name: 'Zabu',
+      cost: '2',
+      power: '2',
       type: 'Ongoing',
       type_id: ongoing[0]._id,
-      image: '',
-      description: ''
-    },
-    {
-      name: '',
-      cost: '',
-      power: '',
-      type: 'Ongoing',
-      type_id: ongoing[0]._id,
-      image: '',
-      description: ''
-    },
-    {
-      name: '',
-      cost: '',
-      power: '',
-      type: 'Ongoing',
-      type_id: ongoing[0]._id,
-      image: '',
-      description: ''
-    },
-    {
-      name: '',
-      cost: '',
-      power: '',
-      type: 'Ongoing',
-      type_id: ongoing[0]._id,
-      image: '',
-      description: ''
-    },
-    {
-      name: '',
-      cost: '',
-      power: '',
-      type: 'Ongoing',
-      type_id: ongoing[0]._id,
-      image: '',
-      description: ''
-    },
-    {
-      name: '',
-      cost: '',
-      power: '',
-      type: 'Ongoing',
-      type_id: ongoing[0]._id,
-      image: '',
-      description: ''
-    },
-    {
-      name: '',
-      cost: '',
-      power: '',
-      type: 'Ongoing',
-      type_id: ongoing[0]._id,
-      image: '',
-      description: ''
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/zabu.webp?v=39',
+      description: 'Your 4-Cost cards cost 1 less. (minimum 1)'
     },
 
-    // No Ability
+    /* No Ability * ***************************************************************
+     ****************************************************************************    */
     {
       name: 'Abomination',
       cost: '5',
@@ -1658,13 +1618,174 @@ const main = async () => {
       image:
         'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/wasp.webp?v=39',
       description: 'My secret power is that I get things done.'
+    },
+
+    /* Discard * ***************************************************************
+     ****************************************************************************    */
+    {
+      name: 'Apocalypse',
+      cost: '6',
+      power: '8',
+      type: 'Discard',
+      type_id: discard[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/apocalypse.webp?v=39',
+      description:
+        'When you discard this from your hand, put it back with +4 Power.'
+    },
+    {
+      name: 'Black Cat',
+      cost: '3',
+      power: '7',
+      type: 'Discard',
+      type_id: discard[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/black-cat.webp?v=39',
+      description:
+        'If this is in your hand at the end of your turn, discard it.'
+    },
+    {
+      name: 'Dracula',
+      cost: '4',
+      power: '0',
+      type: 'Discard',
+      type_id: discard[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/dracula.webp?v=39',
+      description:
+        'At the end of the game, discard a card from your hand. This has its Power.'
+    },
+    {
+      name: 'Helicarrier',
+      cost: '6',
+      power: '10',
+      type: 'Discard',
+      type_id: discard[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/helicarrier.webp?v=39',
+      description:
+        'When you discard this from your hand, add 3 random cards to your hand.'
+    },
+    {
+      name: 'Swarm',
+      cost: '2',
+      power: '3',
+      type: 'Discard',
+      type_id: discard[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/swarm.webp?v=39',
+      description:
+        'When this is discarded from your hand, add two copies that Cost 0 to your hand.'
+    },
+    {
+      name: 'Wolverine',
+      cost: '2',
+      power: '2',
+      type: 'Discard',
+      type_id: discard[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/wolverine.webp?v=39',
+      description:
+        'When this is discarded or destroyed, regenerate it at a random location with +2 Power.'
+    },
+
+    /* Move * ***************************************************************
+     ****************************************************************************    */
+    {
+      name: 'Captain Marvel',
+      cost: '5',
+      power: '6',
+      type: 'Move',
+      type_id: move[0].id,
+      image:
+        'https://marvelsnapzone.com/wp-content/themes/blocksy-child/assets/media/cards/captain-marvel.webp?v=39',
+      description:
+        'At the end of the game, move to a location that wins you the game. (If possible)'
+    },
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Move',
+      type_id: move[0].id,
+      image: '',
+      description: ''
+    },
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Move',
+      type_id: move[0].id,
+      image: '',
+      description: ''
+    },
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Move',
+      type_id: move[0].id,
+      image: '',
+      description: ''
+    },
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Move',
+      type_id: move[0].id,
+      image: '',
+      description: ''
+    },
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Move',
+      type_id: move[0].id,
+      image: '',
+      description: ''
+    },
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Move',
+      type_id: move[0].id,
+      image: '',
+      description: ''
+    },
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Move',
+      type_id: move[0].id,
+      image: '',
+      description: ''
+    },
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Move',
+      type_id: move[0].id,
+      image: '',
+      description: ''
+    },
+
+    /* Destroy * ***************************************************************
+     ****************************************************************************    */
+    {
+      name: '',
+      cost: '',
+      power: '',
+      type: 'Destroy',
+      type_id: destroy[0].id,
+      image: '',
+      description: ''
     }
-
-    // Discard
-
-    // Move
-
-    // Destroy
   ]
 
   await Card.insertMany(cards)
