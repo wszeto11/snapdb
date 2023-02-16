@@ -1,5 +1,5 @@
 const express = require('express')
-// const routes = require('./routes')
+//const routes = require('./routes')
 const db = require('./db')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
@@ -10,6 +10,7 @@ const cors = require('cors')
 const { MongoClient } = require('mongodb')
 const { Card } = require('./models')
 const { Ability } = require('./models')
+const { Deck } = require('./models')
 // require() imports and middleware here ^
 
 // const PORT = process.env.PORT || 3023;
@@ -20,7 +21,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))
 app.use(express.json())
-app.use(express.static(`${__dirname}/client/build`))
+// app.use(express.static(`${__dirname}/client/build`))
 // app.use() middleware here ^
 
 // app.use('/api')
@@ -40,7 +41,25 @@ mongoose
     console.log(err)
   })
 
-app.get('/*', (req, res) => {
-  res.sendFile(`${__dirname}/client/build/index.html`)
+app.get('/cards', async (req, res) => {
+  const cards = await Card.find({})
+  res.json(cards)
 })
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
+
+app.get('/abilities', async (req, res) => {
+  const abilities = await Ability.find({})
+  res.json(abilities)
+})
+
+app.get('/decks', async (req, res) => {
+  const decks = await Deck.find({})
+  res.json(decks)
+})
+
+app.get('/', (req, res) => {
+  res.send('This is root!')
+})
+
+app.listen(PORT, () => {
+  console.log(`Listening on port: ${PORT}`)
+})
