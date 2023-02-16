@@ -1,5 +1,4 @@
-const mongoose = require('mongoose')
-const { Schema } = mongoose.Schema
+const { Schema } = require('mongoose')
 
 const Deck = new Schema(
   {
@@ -10,4 +9,4 @@ const Deck = new Schema(
   { timestamps: true }
 )
 
-module.exports = mongoose.model('deck', Deck)
+module.exports = Deck

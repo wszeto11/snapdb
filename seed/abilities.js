@@ -1,10 +1,10 @@
 const db = require('../db')
-const Type = require('../models/type')
+const { Ability } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-  const types = [
+  const abilities = [
     {
       name: 'On Reveal',
       description: 'Triggers when card is flipped on the board.'
@@ -31,12 +31,13 @@ const main = async () => {
     }
   ]
 
-  await Type.insertMany(types)
-  console.log('Created types')
+  await Ability.insertMany(abilities)
+  console.log('Created abilities')
 }
 
 const run = async () => {
-  await main(db.close())
+  await main()
+  db.close()
 }
 
 run()
