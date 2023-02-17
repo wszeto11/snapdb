@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import Search from '../components/Search'
 import AbilityDetails from './AbilityDetails'
 import ImageSlider from './ImageSlider'
-import { SliderImages } from './SliderImages'
+import { SliderData } from './SliderData'
 import AbilityList from './AbilityList'
 
 const Home = (props) => {

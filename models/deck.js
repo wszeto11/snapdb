@@ -1,6 +1,6 @@
 const { Schema } = require('mongoose')
 
-const Deck = new Schema(
+const deckSchema = new Schema(
   {
     name: { type: String, required: false },
     image: { type: String, required: false },
@@ -9,4 +9,4 @@ const Deck = new Schema(
   { timestamps: true }
 )
 
-module.exports = Deck
+module.exports = deckSchema

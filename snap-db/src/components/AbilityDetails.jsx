@@ -8,13 +8,14 @@ const AbilityDetails = (props) => {
   let { id } = useParams()
 
   const [selectedAbility, setAbility] = useState('')
-  const [selectedCards, setSelectedCards] = useState('')
+  //const [selectedCards, setSelectedCards] = useState('')
 
   useEffect(() => {
     let selectedAbility = props.abilities.find((ability) => ability._id === (id))
     setAbility(selectedAbility)
     console.log(selectedAbility)
   }, [props.abilities, id])
+  
 
   const deleteAbility = async (id) => {
     await axios.delete(`http://localhost:3001/api/abilities/${id}`)

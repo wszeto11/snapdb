@@ -7,7 +7,7 @@ const Search = (props) => {
       <input type='text' name='search' value={props.value} placeholder='Search...' onChange={props.onChange}> 
       </input>
       <button onClick={props.onSubmit}>Submit</button>
-     </div>
+    </div>
     )
 }
 

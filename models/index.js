@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
-const CardSchema = require('./card')
-const AbilitySchema = require('./ability')
-const DeckSchema = require('./deck')
+const cardSchema = require('./card')
+const abilitySchema = require('./ability')
+const deckSchema = require('./deck')
 
-const Card = mongoose.model('Card', CardSchema)
-const Ability = mongoose.model('Ability', AbilitySchema)
-const Deck = mongoose.model('Deck', DeckSchema)
+const Card = mongoose.model('Card', cardSchema)
+const Ability = mongoose.model('Ability', abilitySchema)
+const Deck = mongoose.model('Deck', deckSchema)
 
 module.exports = {
   Card,

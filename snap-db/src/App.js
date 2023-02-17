@@ -1,6 +1,7 @@
 import './App.css'
+import React from 'react'
 import { useState, useEffect } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useNavigate } from 'react-router-dom'
 import Home from './components/Home'
 import Nav from './components/Nav'
 import AbilityList from './components/AbilityList'

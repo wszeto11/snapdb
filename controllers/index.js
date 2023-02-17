@@ -5,21 +5,21 @@ const Deck = require('../models/deck')
 /* Ability Functions ************************************************************ */
 const getAllAbilities = async (req, res) => {
   try {
-    const abilities = await ability.find()
+    const abilities = await Ability.find()
     return res.status(200).json({ abilities })
   } catch (error) {
     return res.status(500).send(error.message)
   }
 }
 
-const getAbilityById = async (req, res) => {
+const getAbilitiesById = async (req, res) => {
   try {
     const { id } = req.params
     const ability = await Ability.findById(id)
     if (ability) {
       return res.status(200).json({ ability })
     }
-    return res.status(404).send('ability with the specified ID dos not exist')
+    return res.status(404).send('ability with the specified ID does not exist')
   } catch (error) {
     return res.status(500), send(error.message)
   }
@@ -79,7 +79,7 @@ const getCardById = async (req, res) => {
     if (card) {
       return res.status(200).json({ card })
     }
-    return res.status(404).send('Card with the specified ID does not exists')
+    return res.status(404).send('Card with the specified ID does not exist')
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -112,15 +112,13 @@ const createDeck = async (req, res) => {
   try {
     const deck = await new Deck(req.body)
     await deck.save()
-    return res.status(201).json({
-      ability // <--ability? or deck?
-    })
+    return res.status(201).json({ ability })
   } catch (error) {
     return res.status(500).json({ error: error.message })
   }
 }
 
-const getAllDecks = async (req, res) => {
+const getAllDeck = async (req, res) => {
   try {
     const deck = await Deck.find()
     return res.status(200).json({ deck })
@@ -131,7 +129,7 @@ const getAllDecks = async (req, res) => {
 
 module.exports = {
   getAllAbilities,
-  getAbilityById,
+  getAbilitiesById,
   updateAbility,
   editAbility,
   createAbility,
@@ -140,5 +138,5 @@ module.exports = {
   getAllCards,
   deleteCard,
   createDeck,
-  getAllDecks
+  getAllDeck
 }
