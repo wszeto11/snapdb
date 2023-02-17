@@ -12,14 +12,14 @@ router.put('/abilities/:id', controllers.editAbility)
 router.put('/abilities/:id', controllers.updateAbility)
 router.post('/abilities/:id', controllers.createAbility)
 router.delete('/abilities/:id', controllers.deleteAbility)
-// router.post('/abilities/:id',controllers.createAlbum)
-// router.put('/playlists', controllers.createAlbum)
-// router.post('/playlists', controllers.createAlbum)
+// router.post('/abilities/:id',controllers.createAbility)
+// router.put('/abilities', controllers.createAbility)
+// router.post('/abilities', controllers.createAbility)
 
 // CARDS //
 router.get('/cards', controllers.getAllCards)
-router.get('/cards:id', controllers.getCardById)
+router.get('/cards/:id', controllers.getCardById)
 router.delete('/cards/:id', controllers.deleteCard)
-// router.post('/cards/:id', controllers.updateSong)
+// router.post('/cards/:id', controllers.updateCard)
 
 module.exports = router

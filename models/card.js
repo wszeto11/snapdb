@@ -1,4 +1,5 @@
-const { Schema } = require('mongoose')
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 const cardSchema = new Schema(
   {
@@ -6,11 +7,11 @@ const cardSchema = new Schema(
     cost: { type: String, required: true },
     power: { type: String, required: true },
     ability: { type: String, required: true },
-    ability_id: { type: Schema.Types.ObjectId, ref: 'ability' },
+    ability_id: { type: Schema.Types.ObjectId, ref: 'Ability' },
     image: { type: String, required: true },
     description: { type: String, required: true }
   },
   { timestamps: true }
 )
 
-module.exports = cardSchema
+module.exports = mongoose.model('Card', cardSchema)

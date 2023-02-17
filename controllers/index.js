@@ -74,6 +74,7 @@ const deleteAbility = async (req, res) => {
 /* Card Functions ************************************************************ */
 const getCardById = async (req, res) => {
   try {
+    console.log('Getting card by ID')
     const { id } = req.params
     const card = await Card.findById(id)
     if (card) {
@@ -87,8 +88,9 @@ const getCardById = async (req, res) => {
 
 const getAllCards = async (req, res) => {
   try {
+    console.log('getting all cards')
     const card = await Card.find()
-    return res.status(200).json({ card })
+    return res.status(200).json(card)
   } catch (error) {
     return res.status(500).send(error.message)
   }

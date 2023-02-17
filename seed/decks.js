@@ -1,5 +1,5 @@
 const db = require('../db')
-const Deck = require('../models/deck')
+const Deck = require('../models/deck.js')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 

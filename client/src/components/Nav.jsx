@@ -11,10 +11,10 @@ const Nav = () => {
       <div className='nav-links'>
         <ul>
           <li><Link to='/'>HOME</Link></li>
-          <li><Link to='/'>ABILITIES</Link></li>
-          <li><Link to='/'>DECK</Link></li>
-          <li><Link to='/'>CARDS</Link></li>
-          <li><Link to='/'>GAME PICS</Link></li>
+          <li><Link to='/abilities'>ABILITIES</Link></li>
+          <li><Link to='/decks'>DECK</Link></li>
+          <li><Link to='/cards'>CARDS</Link></li>
+          {/* <li><Link to='/'>GAME PICS</Link></li> */}
         </ul>
       </div>
     </nav>

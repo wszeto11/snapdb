@@ -8,7 +8,7 @@ import AbilityList from './components/AbilityList'
 import DeckForm from './components/Deck'
 import AbilityDetails from './components/AbilityDetails'
 import axios from 'axios'
-import Card from './components/Card'
+import CardList from './components/CardList'
 import CardDetails from './components/CardDetails'
 import About from './components/About'
 
@@ -31,7 +31,7 @@ function App() {
   const getCards = async () => {
     const cardsList = await axios.get('http://localhost:3001/api/cards')
     console.log(cardsList)
-    setCards(cardsList.data.card)
+    setCards(cardsList.data)
   }
 
   // CREATE DECKS CALL //
@@ -83,7 +83,7 @@ function App() {
               />
             }
           />
-          <Route path="/cards" element={<Card cards={cards} />} />
+          <Route path="/cards" element={<CardList cards={cards} />} />
           <Route
             path="/cards/:id"
             element={<CardDetails cards={cards} getCards={getCards} />}
