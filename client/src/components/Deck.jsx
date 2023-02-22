@@ -34,10 +34,10 @@ const DeckForm = (props) => {
 
   return (
     <div>
-      <h1>CREATE YOUR DECK!</h1>
+      <h1>CREATE YOUR CARD!</h1>
       <form onSubmit={ submit }>
         <input type="text" id={'name'} name={'name'} placeholder={'Name'} onChange={(e) => onChange(e)}/>
-        <input type="text" id={'image'} name={'image'} placeholder={'Ability image'} onChange={(e) => onChange(e)}/>
+        <input type="text" id={'image'} name={'image'} placeholder={'Card image'} onChange={(e) => onChange(e)}/>
         <input type="description" id={'description'} name={'description'} placeholder={'Description'} onChange={(e) => onChange(e)}/>
         <button>Submit</button>
       </form>
